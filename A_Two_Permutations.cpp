@@ -1,18 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 void solve(){
-    long long n, k;
-    cin >> n >> k;
-
-    if(n%2!=0 && k%2==0) cout<<"NO\n";
-    else cout<<"YES\n";
+    int n,a,b;
+    cin>>n>>a>>b;
+    if(a+b+2<=n) cout<<"Yes\n";
+    else if(a==b && b==n) cout<<"Yes\n";
+    else cout<<"No\n";
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
     int t;
     cin >> t;
     while (t--) {
